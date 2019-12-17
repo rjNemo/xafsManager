@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>230</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>12</y>
+     <width>212</width>
+     <height>427</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QLabel" name="label">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Scan Parameters</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>350</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <row>
+       <property name="text">
+        <string>Energy</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Edge </string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Start Scan</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>End Scan</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Total Scan Time</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Time per Point</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Undulator Offset</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Sample Name</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Sample Position</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Motor Position</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Number of Scans</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Value</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>7112</string>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>Fe_K</string>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string>150</string>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string>1000</string>
+       </property>
+      </item>
+      <item row="4" column="0">
+       <property name="text">
+        <string>180</string>
+       </property>
+      </item>
+      <item row="5" column="0">
+       <property name="text">
+        <string>0.1</string>
+       </property>
+      </item>
+      <item row="6" column="0">
+       <property name="text">
+        <string>50</string>
+       </property>
+      </item>
+      <item row="7" column="0">
+       <property name="text">
+        <string>Fe_foil</string>
+       </property>
+      </item>
+      <item row="8" column="0">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </item>
+      <item row="9" column="0">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </item>
+      <item row="10" column="0">
+       <property name="text">
+        <string>1</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="pushButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>Add Scan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

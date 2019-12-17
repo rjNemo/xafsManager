@@ -6,9 +6,13 @@ Author: Ruidy Nemausat
 
 Graphical User Interface allowing to:
 
-- create measurement sequences
-- visualize live data
-- quick treatment
+- create measurement sequences: choose between step and continuous
+- visualize live step-scan data, after each scan continuous-scan data
+- quick treatment: visualisation in E, k and R spaces
+
+## Notes
+
+- `pyuic5 main.ui > main_gui.py` ⚠️ Change main class name to MainGui afterwards
 
 ## Architecture
 
