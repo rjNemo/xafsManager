@@ -13,13 +13,13 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class MainGui(object):
     def setupUi(self, widget):
         widget.setObjectName("widget")
-        widget.resize(798, 575)
+        widget.resize(780, 622)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout(widget)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.toolBox = QtWidgets.QToolBox(widget)
         self.toolBox.setObjectName("toolBox")
         self.scanParameterPage = QtWidgets.QWidget()
-        self.scanParameterPage.setGeometry(QtCore.QRect(0, 0, 774, 483))
+        self.scanParameterPage.setGeometry(QtCore.QRect(0, 0, 756, 530))
         self.scanParameterPage.setAccessibleName("")
         self.scanParameterPage.setObjectName("scanParameterPage")
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.scanParameterPage)
@@ -63,7 +63,7 @@ class MainGui(object):
         self.horizontalLayout_4.addLayout(self.gridLayout)
         self.toolBox.addItem(self.scanParameterPage, "")
         self.DataStoragePage = QtWidgets.QWidget()
-        self.DataStoragePage.setGeometry(QtCore.QRect(0, 0, 774, 483))
+        self.DataStoragePage.setGeometry(QtCore.QRect(0, 0, 756, 530))
         self.DataStoragePage.setObjectName("DataStoragePage")
         self.widget = QtWidgets.QWidget(self.DataStoragePage)
         self.widget.resize(192, 157)
@@ -118,7 +118,7 @@ class MainGui(object):
         self.horizontalLayout_2.addWidget(self.toolBox)
 
         self.retranslateUi(widget)
-        self.toolBox.setCurrentIndex(1)
+        self.toolBox.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(widget)
 
     def retranslateUi(self, widget):

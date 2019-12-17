@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>798</width>
-    <height>575</height>
+    <width>780</width>
+    <height>622</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,15 +26,15 @@
       <string>P65 XAFS Scan Manager</string>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="scanParameterPage">
       <property name="geometry">
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>774</width>
-        <height>483</height>
+        <width>756</width>
+        <height>530</height>
        </rect>
       </property>
       <property name="accessibleName">
@@ -144,8 +144,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>774</width>
-        <height>483</height>
+        <width>756</width>
+        <height>530</height>
        </rect>
       </property>
       <attribute name="label">

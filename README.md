@@ -26,4 +26,6 @@ Graphical User Interface allowing to:
 
 ## TO DO
 
+https://stackoverflow.com/questions/49448990/pyqt-input-dialog-unexpected-type?rq=1
+
 ## BUGS

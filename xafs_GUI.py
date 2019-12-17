@@ -4,9 +4,35 @@
 
 from EXAFS_Monitor.monitor_gui import MonitorWidget
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow
+from PyQt5.QtWidgets import QApplication, QWidget
 from main_gui import MainGui
+from qexafs import QexafsGui
+
 from functools import partial
+
+
+class AddScan(QWidget, QexafsGui):
+    """
+    Widget used to create new scans
+    """
+
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)
+        self.pushButton.clicked.connect(self.save_scans)
+        self.pushButton_2.clicked.connect(self.clear)
+
+    def save_scans(self):
+        """
+        Create list of scan
+        """
+        line = [
+            f"{self.tableWidget.verticalHeaderItem(i).text()}: {self.tableWidget.item(i, 0).text()}" for i in range(11)]
+        self.listWidget.addItem(str(self.listWidget.count()+1)+", ".join(line))
+
+    def clear(self):
+        for line in range(11):
+            self.tableWidget.item(line, 0).setText('')
 
 
 class XafsManager(QWidget, MainGui):
@@ -21,7 +47,11 @@ class XafsManager(QWidget, MainGui):
         super().__init__()
         self.setupUi(self)
 
-        # self.pushButton.clicked.connect(self.listWidget)
+        self.pushButton.clicked.connect(self.add_scan)
+
+    def add_scan(self):
+        self.add = AddScan()
+        self.add.show()
 
         # self.connect(
         #     self.loadLast,
@@ -46,15 +76,17 @@ class XafsManager(QWidget, MainGui):
         #     SIGNAL("clicked()"),
         #     partial(self.clearScans, scanListe)
         # )
-        # Defines a single scan and returns the parameter as a dictionary object
+        #
 #     def make_dict(self, scanListe):
-#             # Collect all the input
+#         """
+#         Defines a single scan and returns the parameter as a dictionary object
+#         """
 #         edge_n = str(self.edge_name.text())
 #         if str(edge_n) == "":
 #             showMessageBox(self, "Edge Name")
-#         dsPar = str(self.ds_param.text())
-#         """if str(dsPar) == "":
-# 			EXAFS_GUI_common.showMessageBox(self,"DS parameter")"""
+#         # dsPar = str(self.ds_param.text())
+#         # """if str(dsPar) == "":
+#             # 	EXAFS_GUI_common.showMessageBox(self,"DS parameter")"""
 #         edge_e = str(self.edge_energy.text())
 #         if str(edge_e) == "":
 #             showMessageBox(self, "Edge energy")
@@ -142,9 +174,9 @@ class XafsManager(QWidget, MainGui):
 
 #         return scanListe
 
-    def showMessageBox(self, missing):
-        QMessageBox.information(
-            self, "Problem!!!", "Missing parameter: " + missing)
+#     def showMessageBox(self):
+#         QMessageBox.information(
+#             self, "Problem!!!", "Clicked")
 
 
 def main():
